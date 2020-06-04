@@ -1,0 +1,1 @@
+{"uuid":"37466c39-0201-4946-a98c-54438e4ad815","name":"testClass.LocalizationTestcase","children":["a13884b5-2bb7-4740-9179-8c3c2aeaf22b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1591274323966,"stop":1591274348868}],"afters":[],"links":[],"start":1591274293993,"stop":1591274391616}

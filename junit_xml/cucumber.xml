@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
+<testcase classname="OrangeHRM Login Page" name="Validate login page Test" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User Open Browser.....................................................undefined
+Given User is on Login Page.................................................undefined
+When User Enter details "Admin" and "admin123"..............................undefined
+Then click on login button..................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="OrangeHRM configuration_localization Page" name="Validate configuration_localization page Test" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is on HomePage...................................................undefined
+When User move to Admin , configuration And click on Localization...........undefined
+Then User click on edit button..............................................undefined
+Then Select langauge from dropdown..........................................undefined
+Then Select date format.....................................................undefined
+Then click on save button...................................................undefined
+]]></failure>
+</testcase>
+<testcase classname="OrangeHRM configuration_Module Page" name="Validate configuration_Module page Test" time="0">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given User is on HomePage...................................................undefined
+When User move to Admin, configuration And click on Modules.................undefined
+Then User click on edit button2.............................................undefined
+Then Select all checkbox....................................................undefined
+]]></failure>
+</testcase>
+</testsuite>
