@@ -13,13 +13,13 @@ public class LoginPageTestCase extends Library {
 		super(); // it will called super class library of constructor and call property file
 	}
 
-	/*@BeforeClass
+	@BeforeClass
 	public void setUp() {
 		// method is coming from Test base class it will called initialization method
 		browserSetUp();
 		// log.info("I am in login page");
 		loginPage = new OrangeHRM_Login_Page();
-	}*/
+	}
 
 	@Test(priority = 1)
 	public void loginTest() {
