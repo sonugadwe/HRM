@@ -44,7 +44,7 @@ public class Library {
 
 	}
 
-	public static void BrowserSetup(){
+	public static void browserSetUp(){
 		String browserName = properties.getProperty("browser");
 				if ("chrome".equals(browserName)) {
 					System.setProperty("webdriver.chrome.driver", "chromedriver83.exe");
