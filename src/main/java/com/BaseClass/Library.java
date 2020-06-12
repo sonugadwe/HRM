@@ -31,7 +31,21 @@ public class Library {
 			InputStream inputStream = new FileInputStream("./src/test/resources/ConfigProperties/config.properties");
 			try {
 				properties.load(inputStream);
-				String browserName = properties.getProperty("browser");
+				
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	//	logger = Logger.getLogger("OrangeHRMApplication");
+	//	PropertyConfigurator.configure("./src/test/resources/Log4jProperty/log4j.properties");
+
+	}
+
+	public static void BrowserSetup(){
+		String browserName = properties.getProperty("browser");
 				if ("chrome".equals(browserName)) {
 					System.setProperty("webdriver.chrome.driver", "chromedriver83.exe");
 					driver = new ChromeDriver();
@@ -46,17 +60,5 @@ public class Library {
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				driver.get(properties.getProperty("url"));
 				
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-
-	//	logger = Logger.getLogger("OrangeHRMApplication");
-	//	PropertyConfigurator.configure("./src/test/resources/Log4jProperty/log4j.properties");
-
-	}
-
 	
 }
